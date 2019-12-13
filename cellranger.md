@@ -26,4 +26,8 @@ md5sum refdata-cellranger-GRCh38-1.2.0.tar.gz
 tar -xzvf refdata-cellranger-GRCh38-1.2.0.tar.gz 
 ```
 
-Add the paths to the cell ranger and genome directories to `.bash_profile` and make a test run with `cellranger testrun --id=tiny`
+Add the paths to the cell ranger and genome directories to `.bash_profile` and make a test run:
+
+```console
+cellranger testrun --id=tiny`
+```
