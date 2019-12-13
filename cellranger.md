@@ -4,21 +4,26 @@ Test
 
 ## Download & Installation
 
-- version: Ranger - 3.0.2 (Feb 26, 2019), md5sum: 120fb0b527187e5b33ad43ebbefdd37e
+- version: Cell Ranger - 3.0.2 (January 15, 2019), md5sum: 73f3766579e800015f82daedb388fcd3
 
 ```console
-wget -O ranger-3.0.2.tar.gz "http://cf.10xgenomics.com/releases/developers/ranger-3.0.2.tar.gz?Expires=1576280051&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cDovL2NmLjEweGdlbm9taWNzLmNvbS9yZWxlYXNlcy9kZXZlbG9wZXJzL3Jhbmdlci0zLjAuMi50YXIuZ3oiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1NzYyODAwNTF9fX1dfQ__&Signature=e6w7MaQD3sSXJOvsSdTU-5ytBxOeWfdJj~Pkv-MotbI2~wAUbKIc18K3--~xA--df1NvXjAKL2bUZVtNHcrmPApQd1VemAfviY50I0FLe7KW7RtEnTvgCLZWWDyjPO9yQRQXDP-8qiiox58ef0Nf4waN3Ub7gBgnHdNWgduybjr9aqmAaAtUaKZwwelf~Jsq2M4-Qf2PZWjO8rM6bGfm3ZxlWbsv3X79OVdUImvaFlMrYdTbq4ZkO3HMFXSJ~rV-CVrNEr1W4c8sFj2TYRRZY0ldq2rYjOlAnJHOVW4eSVW3wWtHHjB6rq-7nqSckIapZIR0oWHwnmjEWLvYSXj38A__&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA"
+wget -O cellranger-3.0.2.tar.gz "http://cf.10xgenomics.com/releases/cell-exp/cellranger-3.0.2.tar.gz?Expires=1576303594&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cDovL2NmLjEweGdlbm9taWNzLmNvbS9yZWxlYXNlcy9jZWxsLWV4cC9jZWxscmFuZ2VyLTMuMC4yLnRhci5neiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTU3NjMwMzU5NH19fV19&Signature=L-2VHxapKCgXSfIILxOIMYc0uhhAhIjck223sZHUDhgENGOmxS2gAlNqec2rZYO1NwrnPrwf~WfOWRFIbPS-5usQMxU2DBIRzl39hrb~OjE5Kd3tbQdJ8mk8sm89SJYJkZ2zQlT64KfRwT904vb8GGOlwBieGgoV~6k6V2ryW~g7cOXwE90pldXJpfPUqjjotna4GqhopxqH~5wXK5BSz814t961rt0Dvr7dUhzILEEQvC8lDS2xlDtxvRhqRdBGyhKcEQgDSXF30YUruhHiwrdwnyBgEm0BlOym9X79tPKk-UCGvlonOPsO0QjrvI8R~IxPKrrHBhtjk2l5lVPamA__&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA"
 
-md5sum ranger-3.0.2.tar.gz
+md5sum cellranger-3.0.2.tar.gz
 
-tar -xzvf ranger-3.0.2.tar.gz 
-
+tar -xzvf cellranger-3.0.2.tar.gz 
 ```
 
 ## Genome
 
-Indexed GRCh38 from 10x
+Indexed GRCh38 from 10x (1.2.0, November 16, 2016), md5sum: c3a4812f7fdb7ba84429a404ba478acf
 
 ```console
 wget http://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-GRCh38-1.2.0.tar.gz
+
+md5sum refdata-cellranger-GRCh38-1.2.0.tar.gz 
+
+tar -xzvf refdata-cellranger-GRCh38-1.2.0.tar.gz 
 ```
+
+Add the paths to the cell ranger and genome directories to `.bash_profile`.
