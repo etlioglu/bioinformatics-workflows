@@ -12,6 +12,8 @@ wget -O cellranger-3.0.2.tar.gz "http://cf.10xgenomics.com/releases/cell-exp/cel
 # Alternatively:
 curl -o cellranger-3.0.2.tar.gz "http://cf.10xgenomics.com/releases/cell-exp/cellranger-3.0.2.tar.gz?Expires=1576546780&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cDovL2NmLjEweGdlbm9taWNzLmNvbS9yZWxlYXNlcy9jZWxsLWV4cC9jZWxscmFuZ2VyLTMuMC4yLnRhci5neiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTU3NjU0Njc4MH19fV19&Signature=ZhzP28d7qzqP6-6O3Hjx~PjquwBFYNrGrXNWkk2h-GJadnEC0v2ygwDLPOojEAH8aWuMZfiGmYA2mY2JqBO7QPC9oVNR-z2BKcm-hqtm20-GPn4cF3P5wAS4fsfMQFiS0dvgql~z7uLlKYMrrH~57AFRE2zPtSp8xk1i4S356A~A-STkKQiR4B4XQ3mmGUuv7D82uuH~dSYfA1JIvOQ1qU98nc5Lzw43ZMkQ8wwDgJjL26NG503bboraM3buvMbz290Cs7nZa5dsuaDfjJK92Bn10Zvch5NYOJjlDBRwgEyhuktMkCxFq1AllWavTZw9luD9RS1SxfGAG5rX9j5YYg__&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA"
 
+# In case of "HTTP request sent, awaiting response... 403 Forbidden", escape the "&" right before "Key-Pair-Id=" with "\"
+
 md5sum cellranger-3.0.2.tar.gz
 
 tar -xzvf cellranger-3.0.2.tar.gz 
