@@ -36,3 +36,38 @@ Add the paths to the cell ranger and genome directories to `.bash_profile` and m
 ```console
 cellranger testrun --id=tiny`
 ```
+
+Example script 
+
+```console
+# Reference Genome
+ref=/DATA/references/cell-ranger/refdata-cellranger-GRCh38-1.2.0
+
+# Path to the main single cell directory
+main_dir_path=/DATA/kul3_fasta/
+
+# Single cell chemistry
+chemistry=threeprime
+
+for sample in ...
+do
+
+# Path to the fastq files
+fastq_path=$main_dir_path/$sample
+
+echo $sample
+
+#NEXT seq only
+cellranger count \
+--id=${sample:0:9} \
+--sample=$sample \
+--transcriptome=$ref \
+--fastqs=$fastq_path \
+--chemistry=$chemistry \
+--localcores=8 \
+--localmem=64
+
+rm ${sample:0:9}/outs/possorted_genome_bam.bam* # delete the resulting bam file and its index
+
+done
+```
