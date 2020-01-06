@@ -34,6 +34,8 @@ conda activate star_rsem
 - Install softwares/pacakges
 
 ```console
+conda install fastqc
+conda install trimmomatic
 conda install star=2.5.3a
 conda install rsem=1.3.0
 ```
