@@ -35,6 +35,7 @@ conda activate star_rsem
 
 ```console
 conda install fastqc
+conda install multiqc
 conda install trimmomatic
 conda install star=2.5.3a
 conda install rsem=1.3.0
