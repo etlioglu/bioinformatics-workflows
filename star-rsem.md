@@ -1,4 +1,4 @@
-# star_rsem
+# star-rsem
 
 STAR-RSEM pipeline of Lee et al., 2020 for bulk RNA-seq data 
 
