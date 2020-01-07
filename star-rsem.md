@@ -68,13 +68,13 @@ for file in ...; \
 do rsem-calculate-expression \
 -p 8 \
 --star \
---output-genome-bam \
---star-path /DATA/anaconda3/envs/star_rsem/bin \
+# --output-genome-bam \
+--star-path path-to-star-executable \
 --star-gzipped-read-file \
 --forward-prob=0 \
 $file \
-/DATA/grch38/my_genome \
-${file:11:7}; \
+path-to-genome \ # 
+${file:11:7}; \ # output folder
 done
 
 ```
