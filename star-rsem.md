@@ -73,7 +73,7 @@ do rsem-calculate-expression \
 --star-gzipped-read-file \
 --forward-prob=0 \
 $file \
-path-to-genome \ # 
+path-to-genome \ # should end with the string used for the "reference_name" parameter of "rsem-prepare-reference"
 ${file:11:7}; \ # output folder
 done
 
