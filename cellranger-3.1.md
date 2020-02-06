@@ -9,6 +9,7 @@ version: Cell Ranger - 3.1.0 (July 24, 2019), md5sum: a362d62530e9d6a653e5bad5b9
 ```console
 wget -O cellranger-3.1.0.tar.gz "http://cf.10xgenomics.com/releases/cell-exp/cellranger-3.1.0.tar.gz?Expires=1580337014&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cDovL2NmLjEweGdlbm9taWNzLmNvbS9yZWxlYXNlcy9jZWxsLWV4cC9jZWxscmFuZ2VyLTMuMS4wLnRhci5neiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTU4MDMzNzAxNH19fV19&Signature=SQtpHD3yOaCcSc5vfdirvPzQyT9-t44vS9qPSNDHtBLJ-000zKUJsiZffHtyyTvdEczYUuVSa85aOcI9WmaJ6feFKDrRYUT1FahATUSRLhTI5N~aPPKUpjnfgns1L8fe0UCCXQ~ErMuktR6iMRxn52TDxqwRGQloIf8TzJkY-I18zV~nZyt4O49dhdAqFwl9g854judvLw8eZ-RbyWoYi9Gia7DDT7BSCItrLqZOy-g9Nf0VgHwwfDN2LTzbSoJi-Uj73C-TQJor97Ylmp-eI4D4tew1rfhXuDGHsj4IYfnXYBhkLx-lJ~1bHJ5iJvtSLpOAetyq6shD5wO92ShgJg__&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA"
 # In case of "HTTP request sent, awaiting response... 403 Forbidden", escape the "&" right before "Key-Pair-Id=" with "\"
+# or try with "curl".
 
 md5sum cellranger-3.1.0.tar.gz 
 
@@ -29,7 +30,7 @@ tar -xzvf refdata-cellranger-GRCh38-3.0.0.tar.gz
 Add the paths to the cell ranger and genome directories to `.bash_profile` and make a test run:
 
 ```console
-cellranger testrun --id=tiny`
+cellranger testrun --id=tiny
 ```
 
 Example script 
